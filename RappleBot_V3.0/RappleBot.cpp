@@ -213,8 +213,8 @@ void RappleBot::ostand(int dt){//Open stand
      -  
 ************************************************/
 void RappleBot::rstand(int dt){//Right stand
-	RappleBot::action(90,-1,35,-1, dt+1);//ll lr fl fr dt
-	RappleBot::action(90,-1,35,125, dt);//ll lr fl fr dt
+	RappleBot::action(90,-1,45,-1, dt+1);//ll lr fl fr dt
+	RappleBot::action(90,-1,45,125, dt);//ll lr fl fr dt
 	RappleBot::action(90,-1,90,125, dt);//ll lr fl fr dt
 }
 /********************************************//** 
@@ -226,8 +226,8 @@ void RappleBot::rstand(int dt){//Right stand
           -
 ************************************************/
 void RappleBot::lstand(int dt){//Left stand
-	RappleBot::action(-1,90,-1,35, dt+1);//ll lr fl fr dt
-	RappleBot::action(-1,90,125,35, dt);//ll lr fl fr dt
+	RappleBot::action(-1,90,-1,45, dt+1);//ll lr fl fr dt
+	RappleBot::action(-1,90,125,45, dt);//ll lr fl fr dt
 	RappleBot::action(-1,90,125,90, dt);//ll lr fl fr dt
 }
 /********************************************//** 
@@ -274,8 +274,8 @@ int dt : delay time
      \|  |     |  |
           -   -    -
 ************************************************/
-void RappleBot::rstep(char d, int val, int dt){
-	//Right step
+void RappleBot::lstep(char d, int val, int dt){
+	//Left step
 	RappleBot::action(-1,-1,90-val,-1, dt);//ll lr fl fr dt
 	RappleBot::action(-1,-1,-1,90+val, dt);//ll lr fl fr dt
 	if(d=='f'){
@@ -300,8 +300,8 @@ int dt : delay time
       |  |/    |  |
      -        -    -
 ************************************************/
-void RappleBot::lstep(char d, int val, int dt){
-	//Left step
+void RappleBot::rstep(char d, int val, int dt){
+	//Right step
 	RappleBot::action(-1,-1,90+val,-1, dt);//ll lr fl fr dt  
 	RappleBot::action(-1,-1,-1,90-val, dt);//ll lr fl fr dt  
 	if(d=='f'){
