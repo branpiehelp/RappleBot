@@ -1,7 +1,13 @@
 /********************************************//** 
-(c) 2021 branpie.com <branpiehelp@gmail.com>
-Rapple Bot
-************************************************/
+ * (c) 2021 branpie.com <branpiehelp@gmail.com>
+ * Rapple Bot
+ *
+ * All Rights Reserved.
+ * This source is published for reference by
+ * Rapple Bot users only. Commercial use,
+ * redistribution, or use in derivative products
+ * requires prior written permission.
+ ************************************************/
 #include <SoftwareSerial.h>
 #include "IRremote.h"
 #include "RappleBot.h"
